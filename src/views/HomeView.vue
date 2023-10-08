@@ -1,14 +1,23 @@
 <template>
-  <!-- <div class="header">
-    <AppHeader />
-  </div> -->
-  <TopBanner />
-  <AboutSite />
-  <AboutMe />
-  <MyWorks />
-  <MySkill />
-  <ContactMe />
-  <EndBanner />
+  <div>
+    <div class="header">
+      <AppHeader />
+    </div>
+
+    <div class="main">
+      <TopBanner />
+      <AboutSite />
+      <AboutMe />
+      <MyWorks />
+      <MySkill />
+      <ContactMe />
+      <EndBanner />
+    </div>
+
+    <div class="footer">
+      <AppFooter />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -20,6 +29,7 @@ import MyWorks from '@/components/MyWorks.vue';
 import MySkill from '@/components/MySkill.vue';
 import ContactMe from '@/components/ContactMe.vue';
 import EndBanner from '@/components/EndBanner.vue';
+import AppFooter from '@/components/AppFooter.vue';
 
 export default {
   name: 'HomeView',
@@ -31,7 +41,8 @@ export default {
     MyWorks,
     MySkill,
     ContactMe,
-    EndBanner
+    EndBanner,
+    AppFooter
   }
 }
 </script>

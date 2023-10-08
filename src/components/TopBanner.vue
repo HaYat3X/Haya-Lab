@@ -23,8 +23,9 @@ export default {
 
 <style scoped>
 .top-banner {
-    background-color: #4b709ae7;
-    height: 100vh;
+    margin-top: 55px;
+    background-color: #6792c4;
+    height: calc(100vh - 55px);
     display: flex;
     align-items: center;
     text-align: center;

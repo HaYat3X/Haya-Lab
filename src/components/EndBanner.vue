@@ -20,7 +20,7 @@ export default {
 
 <style scoped>
 .end-banner {
-    background-color: #4b709ae7;
+    background-color: #6792c4;
     height: 50vh;
     display: flex;
     align-items: center;
