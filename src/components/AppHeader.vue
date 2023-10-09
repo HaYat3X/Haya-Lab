@@ -39,10 +39,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#projects">お問い合わせ</a>
                             </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#team">ブログ</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -74,10 +70,6 @@
 
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#projects">お問い合わせ</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#team">ブログ</a>
                         </li>
                     </ul>
                 </div>

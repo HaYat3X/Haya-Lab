@@ -12,7 +12,7 @@ export default {
     name: 'TopBanner',
     data() {
         return {
-            Message: "Thank you for looking!"
+            Message: "Thank you for watching!"
         }
     },
 }

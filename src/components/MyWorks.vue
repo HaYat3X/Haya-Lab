@@ -2,15 +2,21 @@
     <div class="my-works">
         <div class="container">
             <h2>Works</h2>
+
             <p>
                 私が腕によりをかけて制作した、制作物をご覧ください。
             </p>
 
             <div class="works-item row">
                 <div class="works-content">
-                    <router-link to="/my_closet">
+                    <!-- <button @click="openModal"> -->
                         <img src="../assets/my_closet/visual.png" alt="MY CLOSET" class="works-img">
-                    </router-link>
+                    <!-- </button> -->
+
+                    <button @click="openModal">Open Modal</button>
+
+                    <!-- 使用するモーダルコンポーネント -->
+                    <Modal :show="showModal" @close="closeModal" />
 
                     <p class="text-center mt-2">
                         <small>MY CLOSET</small>
@@ -53,8 +59,26 @@
 
 
 <script>
+import Modal from './productions/Modal.vue'
+
 export default {
     name: 'MyWorks',
+    components: {
+        Modal,
+    },
+    data() {
+        return {
+            showModal: false,
+        };
+    },
+    methods: {
+        openModal() {
+            this.showModal = true;
+        },
+        closeModal() {
+            this.showModal = false;
+        }
+    },
 }
 </script>
 
