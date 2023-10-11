@@ -7,16 +7,15 @@
                 私が腕によりをかけて制作した、制作物をご覧ください。
             </p>
 
-            <div class="works-item row">
+            <div class="works-item row g-2">
                 <div class="works-content">
-                    <!-- <button @click="openModal"> -->
+                    <button @click="openModal('MyClosetModal')" class="btn-original">
                         <img src="../assets/my_closet/visual.png" alt="MY CLOSET" class="works-img">
-                    <!-- </button> -->
+                    </button>
 
-                    <button @click="openModal">Open Modal</button>
-
-                    <!-- 使用するモーダルコンポーネント -->
-                    <Modal :show="showModal" @close="closeModal" />
+                    <Transition name="fade">
+                        <component :is="currentModal" :show="showModal" @close="closeModal" />
+                    </Transition>
 
                     <p class="text-center mt-2">
                         <small>MY CLOSET</small>
@@ -24,9 +23,23 @@
                 </div>
 
                 <div class="works-content">
-                    <router-link to="/my_closet">
+                    <button @click="openModal('RealIntentionModal')" class="btn-original">
                         <img src="../assets/my_closet/visual.png" alt="MY CLOSET" class="works-img">
-                    </router-link>
+                    </button>
+
+                    <Transition name="fade">
+                        <component :is="currentModal" :show="showModal" @close="closeModal" />
+                    </Transition>
+
+                    <p class="text-center mt-1">
+                        <small>Real intentioN</small>
+                    </p>
+                </div>
+
+                <div class="works-content">
+                    <button @click="openModal" class="btn-original">
+                        <img src="../assets/my_closet/visual.png" alt="MY CLOSET" class="works-img">
+                    </button>
 
                     <p class="text-center mt-1">
                         <small>MY CLOSET</small>
@@ -34,19 +47,9 @@
                 </div>
 
                 <div class="works-content">
-                    <router-link to="/my_closet">
+                    <button @click="openModal" class="btn-original">
                         <img src="../assets/my_closet/visual.png" alt="MY CLOSET" class="works-img">
-                    </router-link>
-
-                    <p class="text-center mt-1">
-                        <small>MY CLOSET</small>
-                    </p>
-                </div>
-
-                <div class="works-content">
-                    <router-link to="/my_closet">
-                        <img src="../assets/my_closet/visual.png" alt="MY CLOSET" class="works-img">
-                    </router-link>
+                    </button>
 
                     <p class="text-center mt-1">
                         <small>MY CLOSET</small>
@@ -59,21 +62,25 @@
 
 
 <script>
-import Modal from './productions/Modal.vue'
+import MyClosetModal from './productions/MyClosetModal.vue';
+import RealIntentionModal from './productions/RealIntentionModal.vue';
 
 export default {
     name: 'MyWorks',
     components: {
-        Modal,
+        MyClosetModal,
+        RealIntentionModal,
     },
     data() {
         return {
             showModal: false,
+            currentModal: null,
         };
     },
     methods: {
-        openModal() {
+        openModal(modalType) {
             this.showModal = true;
+            this.currentModal = modalType;
         },
         closeModal() {
             this.showModal = false;
@@ -83,6 +90,16 @@ export default {
 </script>
 
 <style scoped>
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.8s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
 .my-works {
     padding: 40px 0;
     background-color: #e6e6e6;
@@ -111,6 +128,14 @@ export default {
     object-fit: cover;
     box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
+}
+
+.btn-original {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
 }
 
 /* タブレット */
