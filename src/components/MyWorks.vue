@@ -10,7 +10,7 @@
             <div class="works-item row g-2">
                 <div class="works-content">
                     <button @click="openModal('MyClosetModal')" class="btn-original">
-                        <img src="../assets/my_closet/visual.png" alt="MY CLOSET" class="works-img">
+                        <img src="../../public/assets/my_closet/1.png" alt="MY CLOSET" class="works-img">
                     </button>
 
                     <Transition name="fade">
@@ -126,7 +126,7 @@ export default {
     width: 100%;
     height: auto;
     object-fit: cover;
-    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
 }
 
