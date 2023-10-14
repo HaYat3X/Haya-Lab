@@ -85,9 +85,9 @@ export default {
             explanation1: "YouTubeを参考にしながら、作成したタイピングアプリです。 アプリにアクセスするとタイピングする文字と制限時間が表示されます。 正確にタイピングできると文字が青色に代わり、ミスをすると赤色に変化します。 下記リンクからアプリにアクセスできるので、ぜひ遊んでみてください。",
             ProductionScope: "制作期間：3日間",
             ScopeOfResponsibility: "担当範囲：プログラミング",
-            TechnologyUsed: "HTML / CSS / JavaScript / Vue.js / Vue CLI / Git / GitHub / API",
+            TechnologyUsed: "HTML / CSS / JavaScript / Vue.js / Vue / Git / GitHub / API",
             images: [
-                "../../public/assets/typing/1.png",
+                "/assets/typing/1.png",
             ],
             currentIndex: 0,
             interval: null,

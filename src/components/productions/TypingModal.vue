@@ -87,7 +87,7 @@ export default {
             ScopeOfResponsibility: "担当範囲：プログラミング",
             TechnologyUsed: "HTML / CSS / JavaScript / Git / GitHub / API",
             images: [
-                "/assets/typing/1.png",
+                "/Haya-Lab/assets/typing/1.png",
             ],
             currentIndex: 0,
             interval: null,
