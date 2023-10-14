@@ -16,10 +16,10 @@ const routes = [{
             import ( /* webpackChunkName: "about" */ '../views/AboutView.vue'),
     },
     {
-        path: '/my_closet',
-        name: 'my_closet',
-        component: () =>
-            import ('../views/MyCloset.vue'),
+        // path: '/my_closet',
+        // name: 'my_closet',
+        // component: () =>
+        //     import ('../views/MyCloset.vue'),
     },
 ];
 

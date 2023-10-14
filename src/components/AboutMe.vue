@@ -4,7 +4,7 @@
             <h2>{{ AboutMe }}</h2>
 
             <div class="text-center">
-                <img src="../assets/cover.jpg" alt="アバター" class="avatar-img">
+                <img src="../assets/avatar.png" alt="アバター" class="avatar-img">
             </div>
 
             <p>

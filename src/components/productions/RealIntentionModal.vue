@@ -32,7 +32,7 @@
                                     <small> 詳細はこちら</small>
                                 </a>
                                 <br>
-                                <a href="https://github.com/Hayate12345/My_Closet" target="_blank">
+                                <a href="https://github.com/Hayate12345/Real-intentioN-Official" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
                                         class="bi bi-github" viewBox="0 0 16 16">
                                         <path
@@ -41,7 +41,7 @@
                                     <small> ソースコードはこちら</small>
                                 </a>
                                 <br>
-                                <a href="https://frozen-cove-82653-5359138e2ddd.herokuapp.com/" target="_blank">
+                                <a href="https://real-intention.website/Real-intentioN-Official/index.html" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
                                         class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
@@ -85,26 +85,24 @@
 
 <script>
 export default {
-    name: 'MyClosetModal',
+    name: 'RealIntentionModal',
     props: {
         show: Boolean
     },
     data() {
         return {
             title: "Real intentioN",
-            explanation1: "みなさんはファションで悩んだ経験はありませんか？ 「自分に似合う洋服がわからない」「いつも同じ洋服ばかり着ている」「洋服にそこまで興味がないけど、ダサいとは言われたくない」このようなファッションに関する悩み、一度は経験したことがあると思います。 そこで作成したものがファッションアプリ「MY CLOSET」です。 「MY CLOSET」には、AIがあなたに似合う洋服を提案してくれるAIコーデ提案機能が搭載されています。",
-            explanation2: "「MY CLOSET」には、AIコーデ提案機能だけでなく、クローゼット管理機能やコーディネートQ&A機能、ファッションSNS機能など他にも様々な機能が搭載されています。 詳細は下記のリンクで紹介していますので、ぜひご覧ください。",
-            ProductionScope: "制作期間：6ヶ月",
-            ScopeOfResponsibility: "担当範囲：設計 / プログラミング",
-            TechnologyUsed: "HTML / SCSS / Ruby / Ruby on Rails / PostgreSQL / Heroku / Docker / JavaScript / jQuery / Ajax / Git / GitHub",
+            explanation1: "みなさんは就職活動で悩んだ経験はありませんか？ 「先輩はどんな風に就活したのかな...」「学校の求人メール見逃しがち...」「学生の就活状況が知りたい！」このような就職活動に関する悩み、一度は経験したことがあると思います。 そこで作成したサービスが「Real intentioN」です。 「Real intentioN」には、過去に同じ学校に所属していた先輩が、どのようなインターンシップに参加したのか知ることのできるインターンシップ体験記機能、どのようなエントリシートを作成したのか知ることのできるES体験記機能など先輩の就活体験を知ることのできるサービスです。",
+            explanation2: "「Real intentioN」には、就活状況管理機能やインターンシップ情報紹介機能など様々な機能が搭載されています。 詳細は下記のリンクで紹介していますので、ぜひご覧ください。",
+            ProductionScope: "制作期間：8ヶ月",
+            ScopeOfResponsibility: "担当範囲：企画 / 設計 / プログラミング",
+            TechnologyUsed: "HTML / CSS / PHP / MySQL / JavaScript / Bootstrap / Git / GitHub",
             images: [
-                "/assets/my_closet/1.png",
-                "/assets/my_closet/2.png",
-                "/assets/my_closet/3.png",
-                "/assets/my_closet/4.png",
-                "/assets/my_closet/5.png",
-                "/assets/my_closet/6.png",
-                "/assets/my_closet/7.png",
+                "/assets/Real_intentioN/1.png",
+                "/assets/Real_intentioN/2.png",
+                "/assets/Real_intentioN/3.png",
+                "/assets/Real_intentioN/4.png",
+                "/assets/Real_intentioN/5.png",
             ],
             currentIndex: 0,
             interval: null,

@@ -18,31 +18,35 @@
                     </Transition>
 
                     <p class="text-center mt-2">
-                        <small>MY CLOSET</small>
+                        <small>「MY CLOSET」</small>
                     </p>
                 </div>
 
                 <div class="works-content">
                     <button @click="openModal('RealIntentionModal')" class="btn-original">
-                        <img src="../assets/my_closet/visual.png" alt="MY CLOSET" class="works-img">
+                        <img src="../../public/assets/Real_intentioN/1.png" alt="MY CLOSET" class="works-img">
                     </button>
 
                     <Transition name="fade">
                         <component :is="currentModal" :show="showModal" @close="closeModal" />
                     </Transition>
 
-                    <p class="text-center mt-1">
-                        <small>Real intentioN</small>
+                    <p class="text-center mt-2">
+                        <small>「Real intentioN」</small>
                     </p>
                 </div>
 
                 <div class="works-content">
-                    <button @click="openModal" class="btn-original">
-                        <img src="../assets/my_closet/visual.png" alt="MY CLOSET" class="works-img">
+                    <button @click="openModal('TypingModal')" class="btn-original">
+                        <img src="../../public/assets/typing/1.png" alt="MY CLOSET" class="works-img">
                     </button>
 
-                    <p class="text-center mt-1">
-                        <small>MY CLOSET</small>
+                    <Transition name="fade">
+                        <component :is="currentModal" :show="showModal" @close="closeModal" />
+                    </Transition>
+
+                    <p class="text-center mt-2">
+                        <small>「キーボードスプリント」</small>
                     </p>
                 </div>
 
@@ -64,12 +68,14 @@
 <script>
 import MyClosetModal from './productions/MyClosetModal.vue';
 import RealIntentionModal from './productions/RealIntentionModal.vue';
+import TypingModal from './productions/TypingModal.vue';
 
 export default {
     name: 'MyWorks',
     components: {
         MyClosetModal,
         RealIntentionModal,
+        TypingModal,
     },
     data() {
         return {
