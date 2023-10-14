@@ -51,12 +51,16 @@
                 </div>
 
                 <div class="works-content">
-                    <button @click="openModal" class="btn-original">
-                        <img src="../assets/my_closet/visual.png" alt="MY CLOSET" class="works-img">
+                    <button @click="openModal('PortfolioModal')" class="btn-original">
+                        <img src="../../public/assets/typing/1.png" alt="MY CLOSET" class="works-img">
                     </button>
 
-                    <p class="text-center mt-1">
-                        <small>MY CLOSET</small>
+                    <Transition name="fade">
+                        <component :is="currentModal" :show="showModal" @close="closeModal" />
+                    </Transition>
+
+                    <p class="text-center mt-2">
+                        <small>「Haya Lab!」</small>
                     </p>
                 </div>
             </div>
@@ -67,6 +71,7 @@
 
 <script>
 import MyClosetModal from './productions/MyClosetModal.vue';
+import PortfolioModal from './productions/PortfolioModal.vue';
 import RealIntentionModal from './productions/RealIntentionModal.vue';
 import TypingModal from './productions/TypingModal.vue';
 
@@ -76,6 +81,7 @@ export default {
         MyClosetModal,
         RealIntentionModal,
         TypingModal,
+        PortfolioModal,
     },
     data() {
         return {
