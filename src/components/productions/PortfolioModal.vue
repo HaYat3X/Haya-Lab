@@ -87,7 +87,7 @@ export default {
             ScopeOfResponsibility: "担当範囲：プログラミング",
             TechnologyUsed: "HTML / CSS / JavaScript / Vue.js / Vue CLI / Git / GitHub / API",
             images: [
-                "/assets/typing/1.png",
+                "../../public/assets/typing/1.png",
             ],
             currentIndex: 0,
             interval: null,
