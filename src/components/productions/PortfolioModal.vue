@@ -64,7 +64,8 @@
 
                     <div class="right-area">
                         <div class="slideshow">
-                            <img :src="currentImage" alt="" style="width: 100%;">
+                            <!-- <img :src="currentImage" alt="" style="width: 100%;"> -->
+                            coming soon...
                         </div>
                     </div>
                 </div>
@@ -82,12 +83,12 @@ export default {
     data() {
         return {
             title: "Haya Lab!",
-            explanation1: "YouTubeを参考にしながら、作成したタイピングアプリです。 アプリにアクセスするとタイピングする文字と制限時間が表示されます。 正確にタイピングできると文字が青色に代わり、ミスをすると赤色に変化します。 下記リンクからアプリにアクセスできるので、ぜひ遊んでみてください。",
-            ProductionScope: "制作期間：3日間",
+            explanation1: "Vue.jsで作成したポートフォリオサイトです。 私のことや私がこれまで学習してきたスキル、制作物をまとめて掲載しています。",
+            ProductionScope: "制作期間：1週間",
             ScopeOfResponsibility: "担当範囲：プログラミング",
-            TechnologyUsed: "HTML / CSS / JavaScript / Vue.js / Vue / Git / GitHub / API",
+            TechnologyUsed: "HTML / CSS / JavaScript / Vue.js / Vue CLI / Git / GitHub",
             images: [
-                "/assets/typing/1.png",
+                // "/assets/typing/1.png",
             ],
             currentIndex: 0,
             interval: null,

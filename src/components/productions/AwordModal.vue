@@ -18,38 +18,17 @@
                     <div class="left-area">
                         <div class="service">
                             <p>
-                                {{ explanation1 }}<br><br>
-                                {{ explanation2 }}<br>
+                                {{ explanation1 }}
                             </p>
 
                             <p class="links">
-                                <a href="#" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
-                                        class="bi bi-substack" viewBox="0 0 16 16">
-                                        <path
-                                            d="M15 3.604H1v1.891h14v-1.89ZM1 7.208V16l7-3.926L15 16V7.208H1ZM15 0H1v1.89h14V0Z" />
-                                    </svg>
-                                    <small> 詳細はこちら</small>
-                                </a>
-                                <br>
-                                <a href="https://github.com/Hayate12345/Real-intentioN-Official" target="_blank">
+                                <a href="https://github.com/Hayate12345/A-Word" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
                                         class="bi bi-github" viewBox="0 0 16 16">
                                         <path
                                             d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                                     </svg>
                                     <small> ソースコードはこちら</small>
-                                </a>
-                                <br>
-                                <a href="https://real-intention.website/Real-intentioN-Official/index.html" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
-                                        class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
-                                        <path fill-rule="evenodd"
-                                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
-                                    </svg>
-                                    <small> サイトはこちら</small>
                                 </a>
                             </p>
                         </div>
@@ -85,24 +64,21 @@
 
 <script>
 export default {
-    name: 'RealIntentionModal',
+    name: 'AwordModal',
     props: {
         show: Boolean
     },
     data() {
         return {
-            title: "Real intentioN",
-            explanation1: "みなさんは就職活動で悩んだ経験はありませんか？ 「先輩はどんな風に就活したのかな...」「学校の求人メール見逃しがち...」「学生の就活状況が知りたい！」このような就職活動に関する悩み、一度は経験したことがあると思います。 そこで作成したサービスが「Real intentioN」です。 「Real intentioN」には、過去に同じ学校に所属していた先輩が、どのようなインターンシップに参加したのか知ることのできるインターンシップ体験記機能、どのようなエントリシートを作成したのか知ることのできるES体験記機能など先輩の就活体験を知ることのできるサービスです。",
-            explanation2: "「Real intentioN」には、就活状況管理機能やインターンシップ情報紹介機能など様々な機能が搭載されています。 詳細は下記のリンクで紹介していますので、ぜひご覧ください。",
-            ProductionScope: "制作期間：8ヶ月",
-            ScopeOfResponsibility: "担当範囲：企画 / 設計 / プログラミング",
-            TechnologyUsed: "HTML / CSS / PHP / MySQL / JavaScript / Bootstrap / Git / GitHub / MAMP",
+            title: "A-word",
+            explanation1: "PHPを使用して作成したX（旧twitter）クローンサイトです。 会員登録、ログイン、メッセージの投稿ができます。 UIはX（旧twitter）に似せて作成しました。 ただ、クローンサイトを作るだけではつまらないので、右側のエリアに現在地の天気をAPIを活用し、表示させてみました。",
+            ProductionScope: "制作期間：1週間",
+            ScopeOfResponsibility: "担当範囲：プログラミング",
+            TechnologyUsed: "HTML / CSS / PHP / MySQL / JavaScript / vanilla.js / Git / GitHub / MAMP / API",
             images: [
-                "/Haya-Lab/assets/Real_intentioN/1.png",
-                "/Haya-Lab/assets/Real_intentioN/2.png",
-                "/Haya-Lab/assets/Real_intentioN/3.png",
-                "/Haya-Lab/assets/Real_intentioN/4.png",
-                "/Haya-Lab/assets/Real_intentioN/5.png",
+                "/Haya-Lab/assets/a_word/1.png",
+                "/Haya-Lab/assets/a_word/2.png",
+                "/Haya-Lab/assets/a_word/3.png",
             ],
             currentIndex: 0,
             interval: null,

@@ -52,7 +52,8 @@
 
                 <div class="works-content">
                     <button @click="openModal('PortfolioModal')" class="btn-original">
-                        <img src="../../public/assets/typing/1.png" alt="MY CLOSET" class="works-img">
+                        <!-- <img src="../../public/assets/typing/1.png" alt="MY CLOSET" class="works-img"> -->
+                        coming soon...
                     </button>
 
                     <Transition name="fade">
@@ -63,6 +64,48 @@
                         <small>「Haya Lab!」</small>
                     </p>
                 </div>
+
+                <div class="works-content">
+                    <button @click="openModal('QuizModal')" class="btn-original">
+                        <img src="../../public/assets/quiz/1.png" alt="MY CLOSET" class="works-img">
+                    </button>
+
+                    <Transition name="fade">
+                        <component :is="currentModal" :show="showModal" @close="closeModal" />
+                    </Transition>
+
+                    <p class="text-center mt-2">
+                        <small>「ポケモン Quiz」</small>
+                    </p>
+                </div>
+
+                <div class="works-content">
+                    <button @click="openModal('AwordModal')" class="btn-original">
+                        <img src="../../public/assets/a_word/1.png" alt="MY CLOSET" class="works-img">
+                    </button>
+
+                    <Transition name="fade">
+                        <component :is="currentModal" :show="showModal" @close="closeModal" />
+                    </Transition>
+
+                    <p class="text-center mt-2">
+                        <small>「A-word」</small>
+                    </p>
+                </div>
+
+                <div class="works-content">
+                    <button @click="openModal('NewsModal')" class="btn-original">
+                        <img src="../../public/assets/news/1.png" alt="MY CLOSET" class="works-img">
+                    </button>
+
+                    <Transition name="fade">
+                        <component :is="currentModal" :show="showModal" @close="closeModal" />
+                    </Transition>
+
+                    <p class="text-center mt-2">
+                        <small>「Simple newS」</small>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -70,8 +113,11 @@
 
 
 <script>
+import AwordModal from './productions/AwordModal.vue';
 import MyClosetModal from './productions/MyClosetModal.vue';
+import NewsModal from './productions/NewsModal.vue';
 import PortfolioModal from './productions/PortfolioModal.vue';
+import QuizModal from './productions/QuizModal.vue';
 import RealIntentionModal from './productions/RealIntentionModal.vue';
 import TypingModal from './productions/TypingModal.vue';
 
@@ -82,6 +128,9 @@ export default {
         RealIntentionModal,
         TypingModal,
         PortfolioModal,
+        QuizModal,
+        AwordModal,
+        NewsModal,
     },
     data() {
         return {
