@@ -37,6 +37,20 @@
                 </div>
 
                 <div class="works-content">
+                    <button @click="openModal('PackCatModal')" class="btn-original">
+                        <img src="../../public/assets/pack_cat/1.png" alt="MY CLOSET" class="works-img">
+                    </button>
+
+                    <Transition name="fade">
+                        <component :is="currentModal" :show="showModal" @close="closeModal" />
+                    </Transition>
+
+                    <p class="text-center mt-2">
+                        <small>「Pack Cat」</small>
+                    </p>
+                </div>
+
+                <div class="works-content">
                     <button @click="openModal('TypingModal')" class="btn-original">
                         <img src="../../public/assets/typing/1.png" alt="MY CLOSET" class="works-img">
                     </button>
@@ -106,6 +120,48 @@
                         <small>「Simple newS」</small>
                     </p>
                 </div>
+
+                <div class="works-content">
+                    <button @click="openModal('TodoModal')" class="btn-original">
+                        <img src="../../public/assets/todo/1.png" alt="MY CLOSET" class="works-img">
+                    </button>
+
+                    <Transition name="fade">
+                        <component :is="currentModal" :show="showModal" @close="closeModal" />
+                    </Transition>
+
+                    <p class="text-center mt-2">
+                        <small>「TodoApp」</small>
+                    </p>
+                </div>
+
+                <div class="works-content">
+                    <button @click="openModal('YouTubeModal')" class="btn-original">
+                        <img src="../../public/assets/youtube/1.png" alt="MY CLOSET" class="works-img">
+                    </button>
+
+                    <Transition name="fade">
+                        <component :is="currentModal" :show="showModal" @close="closeModal" />
+                    </Transition>
+
+                    <p class="text-center mt-2">
+                        <small>「YouTubeCloneApp」</small>
+                    </p>
+                </div>
+
+                <div class="works-content">
+                    <button @click="openModal('TravelogueModal')" class="btn-original">
+                        <img src="../../public/assets/travelogue/1.png" alt="MY CLOSET" class="works-img">
+                    </button>
+
+                    <Transition name="fade">
+                        <component :is="currentModal" :show="showModal" @close="closeModal" />
+                    </Transition>
+
+                    <p class="text-center mt-2">
+                        <small>「Travelogue」</small>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -116,10 +172,14 @@
 import AwordModal from './productions/AwordModal.vue';
 import MyClosetModal from './productions/MyClosetModal.vue';
 import NewsModal from './productions/NewsModal.vue';
+import PackCatModal from './productions/PackCatModal.vue';
 import PortfolioModal from './productions/PortfolioModal.vue';
 import QuizModal from './productions/QuizModal.vue';
 import RealIntentionModal from './productions/RealIntentionModal.vue';
+import TodoModal from './productions/TodoModal.vue';
+import TravelogueModal from './productions/TravelogueModal.vue';
 import TypingModal from './productions/TypingModal.vue';
+import YouTubeModal from './productions/YouTubeModal.vue';
 
 export default {
     name: 'MyWorks',
@@ -131,6 +191,10 @@ export default {
         QuizModal,
         AwordModal,
         NewsModal,
+        TodoModal,
+        YouTubeModal,
+        TravelogueModal,
+        PackCatModal,
     },
     data() {
         return {
@@ -168,7 +232,7 @@ export default {
 
 .my-works h2 {
     font-size: 28px;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: bold;
     text-align: center;
@@ -187,7 +251,6 @@ export default {
     width: 100%;
     height: auto;
     object-fit: cover;
-    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
 }
 
