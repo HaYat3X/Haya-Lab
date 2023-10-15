@@ -3,7 +3,7 @@
         <div class="container">
             <h1>{{ SiteTitle }}</h1>
             <p>{{ SiteExplanation }}</p>
-            <img src="../assets/my_closet/test.png" alt="アイコン" class="banner-img">
+            <img src="../assets/banner.png" alt="アイコン" class="banner-img">
         </div>
     </div>
 </template>
