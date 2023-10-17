@@ -12,21 +12,21 @@
                 実務レベルで問題なく使用可能」という感じのレベル感を想定しています。
             </p>
 
-            <div class="skills-item row g-5">
+            <div class="skills-item row g-0">
                 <div class="skills-content">
-                    <img src="../assets/skill/1.png" alt="" width="100%" style="border-radius: 5px;">
+                    <img src="../assets/skill/1.png" alt="" class="skill-img">
                 </div>
 
                 <div class="skills-content">
-                    <img src="../assets/skill/2.png" alt="" width="100%" style="border-radius: 5px;">
+                    <img src="../assets/skill/2.png" alt="" class="skill-img">
                 </div>
 
                 <div class="skills-content">
-                    <img src="../assets/skill/3.png" alt="" width="100%" style="border-radius: 5px;">
+                    <img src="../assets/skill/3.png" alt="" class="skill-img">
                 </div>
 
                 <div class="skills-content">
-                    <img src="../assets/skill/4.png" alt="" width="100%" style="border-radius: 5px;">
+                    <img src="../assets/skill/4.png" alt="" class="skill-img">
                 </div>
             </div>
         </div>
@@ -59,6 +59,17 @@ export default {
     text-align: center;
 }
 
+.skill-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.skills-item {
+    margin-top: 30px;
+}
+
 
 /* タブレット */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -71,17 +82,19 @@ export default {
         font-size: 50px;
     }
 
-    .skills-content img {
-        border-radius: 50px;
+    .my-skill p {
+        margin: 0 auto;
     }
 
-
-    .works-item {
+    .skills-item {
         display: flex;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .works-content {
+    .skills-content {
         width: 50%;
+        padding: 10px;
     }
 }
 
@@ -105,11 +118,13 @@ export default {
     .skills-item {
         display: flex;
         width: 930px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .skills-content {
         width: 50%;
+        padding: 10px;
     }
 }
 </style>

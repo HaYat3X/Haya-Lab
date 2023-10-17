@@ -7,5 +7,11 @@
 
 #app {
   font-family: Hiragino Kaku Gothic Pro;
+  overflow-y: scroll;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 </style>

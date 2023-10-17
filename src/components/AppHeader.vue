@@ -13,7 +13,7 @@
                 </button>
 
                 <div class="mx-auto">
-                    <img src="../assets/logo.png" alt="" style="width: 40px; margin-right: 37px;">
+                    <img src="../assets/logo.png" alt="" style="width: 40px; padding-right: 37px;">
                 </div>
 
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
@@ -25,7 +25,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">このサイトについて</a>
+                                <a class="nav-link" href="#">私について</a>
                             </li>
 
                             <li class="nav-item dropdown">
@@ -43,9 +43,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light fixed-top pc-header">
             <div class="container" style="width: 950px;">
-                <a class="navbar-brand" href="#">
-                    <img src="../assets/logo.png" alt="" width="35">
-                </a>
+                <img src="../assets/logo.png" alt="" width="35">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></button>
@@ -57,11 +55,11 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">このサイトについて</a>
+                            <a class="nav-link" href="#/profile">私について</a>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#projects">制作物</a>
+                            <a class="nav-link" href="#/#projects">制作物</a>
                         </li>
 
                         <li class="nav-item dropdown">

@@ -29,6 +29,7 @@ export default {
     display: flex;
     align-items: center;
     text-align: center;
+    width: 100%;
 }
 
 .top-banner h1 {
@@ -44,7 +45,6 @@ export default {
     font-weight: bold;
     font-size: 20px;
     font-family: 'Noto Sans JP', sans-serif;
-
 }
 
 .top-banner .banner-img {

@@ -7,15 +7,13 @@
                 <img src="../assets/avatar.png" alt="アバター" class="avatar-img">
             </div>
 
+            <p class="fw-bold mt-3">
+                {{ name }}
+            </p>
+
             <p>
                 {{ AboutProfile }}
             </p>
-
-            <div class="profile">
-                <router-link to="/my_closet">
-                    PROFILE
-                </router-link>
-            </div>
         </div>
     </div>
 </template>
@@ -27,7 +25,8 @@ export default {
     data() {
         return {
             AboutMe: "About Me",
-            AboutProfile: "鳥取県出身のエンジニア。専門学校でIT技術を学んだのち、20才でIT業界へ。専門学校では、サービスの企画や開発、運用までを手がけ、フロントエンドやバックエンドはもちろん、インフラまで幅広く学習を続けてきました。",
+            name: "竹田 颯（たけだ はやて）",
+            AboutProfile: "鳥取県出身のエンジニア。 専門学校でIT技術を学んだのち、20才でIT業界へ。 専門学校で、Webサービスの企画や開発、運用までを手がけ、フロントエンドやバックエンドはもちろん、インフラまで幅広く学習を続けてきました。 将来は、時代に合わせた技術を追いかけつつ、クライアントに寄り添い、クライアント悩みや課題を解決できる。 そんなエンジニアになりたいと考えています。",
         }
     },
 }
@@ -61,21 +60,6 @@ export default {
     margin-top: 50px;
 }
 
-.about-me .profile a {
-    background-color: #4b709a;
-    color: #ffffff;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.about-me p {
-    margin-top: 20px;
-    font-size: 16px;
-}
-
 /* タブレット/デスクトップ */
 @media (min-width: 521px) {
     .about-me h2 {
@@ -84,7 +68,8 @@ export default {
 
     .about-me p {
         width: 450px;
-        margin: 20px auto 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 </style>

@@ -7,7 +7,7 @@
             </p>
 
             <div class="contact">
-                <a href="https://github.com/Hayate12345" target="_blank">
+                <a href="https://forms.gle/9cfzT3K3yGsZMURAA" target="_blank">
                     CONTACT
                 </a>
             </div>
