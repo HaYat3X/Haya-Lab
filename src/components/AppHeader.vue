@@ -13,7 +13,7 @@
                 </button>
 
                 <div class="mx-auto">
-                    <img src="../assets/logo.png" alt="" style="width: 40px; padding-right: 37px;">
+                    <img src="../assets/banner.png" alt="" width="40" style="margin-right: 20px;">
                 </div>
 
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
@@ -43,7 +43,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light fixed-top pc-header">
             <div class="container" style="width: 950px;">
-                <img src="../assets/logo.png" alt="" width="35">
+                <img src="../assets/banner.png" alt="" width="40">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></button>

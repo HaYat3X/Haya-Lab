@@ -7,7 +7,7 @@
             </p>
 
             <div class="contact">
-                <a href="https://forms.gle/9cfzT3K3yGsZMURAA" target="_blank">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBDqRPiF2EWVERFTrG8U9sDN8Rz_hACP8Kqkqz6DezEGZbhA/viewform" target="_blank">
                     CONTACT
                 </a>
             </div>

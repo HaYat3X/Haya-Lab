@@ -14,7 +14,7 @@
 
             <div class="skills-item row g-0">
                 <div class="skills-content">
-                    <img src="../assets/skill/1.png" alt="" class="skill-img">
+                    <line-chart :chartdata="chartData" :options="chartOptions"/>
                 </div>
 
                 <div class="skills-content">
@@ -59,7 +59,7 @@ export default {
     text-align: center;
 }
 
-.skill-img{
+.skill-img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -113,7 +113,6 @@ export default {
         width: 930px;
         margin: 0 auto;
     }
-
 
     .skills-item {
         display: flex;

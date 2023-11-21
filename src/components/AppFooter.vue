@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <p class="mb-0">© 2023 Hayate takeda</p>
+        <p class="mb-0">© 2023 Hayate Takeda</p>
     </div>
 </template>
 

@@ -9,7 +9,7 @@
 
 <script>
 export default {
-    name: 'TopBanner',
+    name: 'EndBanner',
     data() {
         return {
             Message: "Thank you for watching!"
